@@ -1,0 +1,33 @@
+{
+  "output": {
+    "logstash": {
+      "port": 5045,
+      "host": "51.159.25.73"
+    }
+  },
+  "beat": {
+    "name": "networkdiscovery",
+    "version": "1.0.0",
+    "clientName": "IPSM",
+    "clientId": 6,
+    "tags": [
+      "Topology"
+    ],
+    "interval": 300
+  },
+  "switchs": [
+    "192.168.1.24",
+    "192.168.1.11",
+    "192.168.1.3",
+    "192.168.1.4",
+    "192.168.1.16",
+    "192.168.1.6"
+  ],
+  "snmpCommunities": [
+    {
+      "port": 161,
+      "community": "public",
+      "version": "1"
+    }
+  ]
+}
