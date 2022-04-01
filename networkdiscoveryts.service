@@ -1,0 +1,12 @@
+[Unit]
+Description=Network Discovery
+[Service]
+User=root
+WorkingDirectory=/etc/elastic/networkdiscoveryts/dist
+ExecStart=/etc/elastic/networkdiscoveryts/dist/start
+SuccessExitStatus=143
+TimeoutStopSec=10
+Restart=on-failure
+RestartSec=5
+[Install]
+WantedBy=multi-user.target

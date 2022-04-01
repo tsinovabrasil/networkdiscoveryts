@@ -1,0 +1,2 @@
+#!/bin/sh
+java -jar networkdiscoveryts.jar server config.yml
